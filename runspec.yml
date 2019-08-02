@@ -1,0 +1,12 @@
+pretest:
+  - cd java/src
+  - javac -cp ".:../package/*" BaseTest.java
+  - javac -cp ".:../package/*" AndroidSelectorstest.java
+  - cd ..
+
+test:
+  - java -cp ".:./package/*:./src/" org.testng.TestNG temp-testng-customsuite.xml
+
+posttest:
+  - echo "haha "
+  - echo "success"
