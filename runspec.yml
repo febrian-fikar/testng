@@ -1,7 +1,7 @@
 pretest:
   - cd java/src
   - javac -cp ".:../package/*" BaseTest.java
-  - javac -cp ".:../package/*" AndroidSelectorstest.java
+  - javac -cp ".:../package/*" AndroidSelectorsTest.java
   - cd ..
 
 test:
